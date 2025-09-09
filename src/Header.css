@@ -1,0 +1,54 @@
+/* Make header stay on top */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+.header {
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Container for layout */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo / Name */
+.logo span {
+  font-size: 40px;  /* Bigger font for Alessandra */
+  font-weight: bold;
+  font-family: 'satisfy', cursive;
+  font-style: italic; 
+  color: #ad1457; /* dark pink */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 40px; /* spacing between links */
+}
+
+.nav-links a {
+  font-size: 24px;   /* Font size for About, Skills, etc */
+  font-weight: bold;
+  font-family: 'playfair display', serif;
+  color: #880e4f; /* rich pink */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  font-family: Arial, sans-serif;
+}
+
+.nav-links a:hover {
+  color: black;
+}
+

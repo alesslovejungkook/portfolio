@@ -1,0 +1,90 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #fff0f5, /* very light pink */
+    #fdeef3, /* pastel pink */
+    #f8bbd0  /* soft rosy pink */
+  );
+}
+
+.about-text {
+  max-width: 50%;
+}
+
+.about-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #ad1457; /* dark pink */
+ 
+}
+
+.about-text h2 span {
+  font-style: italic;
+}
+
+.about-text h1 {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.about-text .highlight {
+  color: #ad1457; /* dark pink */
+  
+}
+
+.about-text h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ad1457; /* dark pink */
+ 
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  padding: 12px 30px;
+  background: #ad1457;   /* 🔹 this changes the background color */
+  color: white;          /* 🔹 this changes the text color */
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #880e4f;   /* 🔹 darker shade of pink on hover */
+}
+
+
+.cta-btn:hover {
+  color: #ad1457; /* dark pink */
+}
+
+.about-image img {
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid #ad1457; /* Adds a 5px dark pink border */
+  border-radius: 15px;       /* Optional: rounded corners */
+}
+
+
+.about-image img {
+  width: 80%;
+  object-fit: cover;
+}
