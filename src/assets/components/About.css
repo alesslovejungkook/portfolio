@@ -2,12 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 10%;
-  min-height: 100vh;
+  padding: 100px 10%;
+  width: 80%;
+  min-height: 90vh;
   background: linear-gradient(
     135deg,
-    #fff0f5, /* very light pink */
-    #fdeef3, /* pastel pink */
+    #fff0f5, 
+    #fdeef3, 
     #f8bbd0  /* soft rosy pink */
   );
 }

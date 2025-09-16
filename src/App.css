@@ -4,6 +4,16 @@
   padding: 2rem;
   text-align: center;
 }
+.section-header {
+  color: #ad1457; /* dark pink */
+  font-family: 'Playfair Display', serif; /* match your theme */
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
 
 .logo {
   height: 6em;
@@ -40,3 +50,53 @@
 .read-the-docs {
   color: #888;
 }
+
+/* 🔹 Added for AboutMe dropdown */
+.aboutme-dropdown {
+  margin-top: 20px;
+  animation: slideDown 0.4s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #ad1457; /* dark pink */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #880e4f; /* deeper pink */
+  transform: translateY(-2px);
+}
+.aboutme-dropdown {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s ease;
+}
+
+.aboutme-dropdown.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.aboutme-dropdown.hide {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+

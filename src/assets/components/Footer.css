@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background: linear-gradient(180deg, #fff0f5, #fdeef3, #f8bbd0); /* matches your theme */
+  padding: 40px 10%;
+  text-align: left;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-section h3 {
+  color: #b3005e; /* dark pink, matches navbar and titles */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: #333; /* readable against pink */
+}

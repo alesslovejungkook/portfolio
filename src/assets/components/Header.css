@@ -1,4 +1,4 @@
-/* Make header stay on top */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
 
 .header {
@@ -11,7 +11,6 @@
   z-index: 1000;
 }
 
-/* Container for layout */
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -21,34 +20,49 @@
   align-items: center;
 }
 
-/* Logo / Name */
 .logo span {
-  font-size: 40px;  /* Bigger font for Alessandra */
+  font-size: 40px; 
   font-weight: bold;
   font-family: 'satisfy', cursive;
   font-style: italic; 
-  color: #ad1457; /* dark pink */
+  color: #ad1457; 
   padding: 5px 10px;
   border-radius: 5px;
 }
 
-/* Navigation links */
 .nav-links {
   display: flex;
-  gap: 40px; /* spacing between links */
+  gap: 24px; 
 }
 
-.nav-links a {
-  font-size: 24px;   /* Font size for About, Skills, etc */
+.nav-links a,
+.nav-links button {
+  font-size: 20px;   
   font-weight: bold;
-  font-family: 'playfair display', serif;
-  color: #880e4f; /* rich pink */
+  font-family: 'Playfair Display', serif;
+  color: #880e4f;
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
+  background: none;       
+  border: none;           
+  cursor: pointer;
+  transition: all 0.3s ease; 
   font-family: Arial, sans-serif;
 }
 
-.nav-links a:hover {
-  color: black;
+.nav-links a:focus,
+.nav-links button:focus {
+  outline: none;
+  border: none;                 
+  border-radius: 0;
+  text-decoration: underline;   
+  text-decoration-thickness: 2px;  
+  text-decoration-color: #ad1457;  
 }
 
+
+.nav-links a:hover,
+.nav-links button:hover {
+  color: #ad1457;             
+  transform: translateY(-3px); 
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); 
+}

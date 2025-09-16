@@ -1,0 +1,54 @@
+.aboutme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 10%;
+  width: 80%;
+  min-height: 90vh;
+  background: linear-gradient(
+    135deg,
+    #fff0f5,
+    #fdeef3,
+    #f8bbd0
+  );
+}
+
+.aboutme-text {
+  max-width: 50%;
+}
+
+.aboutme-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #ad1457;
+}
+
+.aboutme-text h2 span {
+  font-style: italic;
+}
+
+.aboutme-text p {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.aboutme-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.aboutme-text ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.aboutme-image img {
+  width: 80%;
+  object-fit: cover;
+  border: 3px solid #ad1457;
+  border-radius: 15px;
+}
