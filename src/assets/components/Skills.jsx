@@ -15,7 +15,6 @@ function Skills() {
     return () => observer.disconnect();
   }, []);
 
-  // Array of skills
   const skillsList = [
     {
       name: "Canva",
@@ -66,10 +65,8 @@ function Skills() {
 
   return (
     <div className="skills-section">
-      {/* Section Header */}
       <h2 className="skills-title">My Skills</h2>
 
-      {/* Skills Grid */}
       <div ref={ref} className={`skills ${isVisible ? "show" : ""}`}>
         {skillsList.map((skill) => (
           <div key={skill.name} className="card">

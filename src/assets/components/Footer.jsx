@@ -11,7 +11,7 @@ function Footer() {
 
       <div className="footer-section">
         <h3>Contact</h3>
-        <p>Email: alessandraaa@email.lcup.edu.ph</p>
+        <p>Email: alessandranixxx@gmail.com</p>
         <p>Phone: +63 912 345 6789</p>
       </div>
 

@@ -17,11 +17,11 @@ const AboutMe = ({ onBack }) => {
           continuing to grow as a student leader and creative thinker.
         </p>
         <div className="info">
-            <p>✨ <b>Age:</b> 21</p>
-            <p>🎂 <b>Birthday:</b> August 20, 2004</p>
-            <p>💍 <b>Address:</b> Plaridel, Bulacan</p>
-            <p>🌏 <b>Nationality:</b> Filipino</p>
-            <p>🙏 <b>Religion:</b> Catholic</p>
+            <p><b>Age:</b> 21</p>
+            <p><b>Birthday:</b> August 20, 2004</p>
+            <p><b>Address:</b> Plaridel, Bulacan</p>
+            <p><b>Nationality:</b> Filipino</p>
+            <p><b>Religion:</b> Catholic</p>
           </div>
 
             <button className="cta-btn" onClick={onBack}>Back</button>
