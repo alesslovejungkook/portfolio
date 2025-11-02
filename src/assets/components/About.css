@@ -5,19 +5,28 @@
   padding: 100px 10%;
   width: 80%;
   min-height: 90vh;
-  background: linear-gradient(
-    135deg,
-    #fff0f5, 
-    #fdeef3, 
-    #f8bbd0  
-  );
+  background: transparent; 
+  position: relative;
+  z-index: 2; 
 }
+
 
 .about-text {
   max-width: 50%;
 }
 
-.about-text h2 {
+.about-text h2 {.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 10%;
+  width: 80%;
+  min-height: 90vh;
+  background: transparent; 
+  position: relative;
+  z-index: 2; 
+}
+
   font-family: "Playfair Display", serif;
   font-size: 48px;
   font-weight: 400;

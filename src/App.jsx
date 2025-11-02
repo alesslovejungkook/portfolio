@@ -8,7 +8,9 @@ import Footer from './assets/components/Footer.jsx';
 import Projects from './assets/components/Projects.jsx';
 import API from './assets/components/Api.jsx'; 
 import Contact from './assets/components/Contact.jsx';
-import Certificates from './assets/components/Certificates.jsx'; // added import
+import Certificates from './assets/components/Certificates.jsx';
+import Background from './assets/components/Background';
+import Quotes from './assets/components/Quotes.jsx'; 
 
 function App() {
   const [showAboutMe, setShowAboutMe] = useState(false);
@@ -35,7 +37,27 @@ function App() {
   };
 
   return (
-    <>
+    <div className="App" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
+        <Background
+          colors={["#FFE4EC", "#FFD1DC", "#FFB6C1", "#9e2258ff"]}
+          mouseForce={20}
+          cursorSize={100}
+          isViscous={false}
+          viscous={30}
+          iterationsViscous={32}
+          iterationsPoisson={32}
+          resolution={0.5}
+          isBounce={false}
+          autoDemo={true}
+          autoSpeed={0.5}
+          autoIntensity={2.2}
+          takeoverDuration={0.25}
+          autoResumeDelay={3000}
+          autoRampDuration={0.6}
+        />
+      </div>
+
       <Header />
       <main className="main-content">
         <section id="about" className="section" ref={aboutRef}>
@@ -52,6 +74,10 @@ function App() {
           </section>
         )}
 
+        <section id="quotes" className="section">
+          <Quotes />
+        </section>
+
         <section id="projects" className="section">
           <Projects />
         </section>
@@ -60,10 +86,9 @@ function App() {
           <Skills />
         </section>
 
-        {/* Certificates Section */}
         <section id="certificates" className="section">
           <h2 className="section-header">Certificates</h2>
-          <Certificates /> {/* added certificates carousel */}
+          <Certificates />
         </section>
 
         <section id="contact" className="section">
@@ -77,7 +102,7 @@ function App() {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

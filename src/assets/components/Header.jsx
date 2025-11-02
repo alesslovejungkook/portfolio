@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import './Header.css';
 
 function Header() {
@@ -8,6 +9,21 @@ function Header() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+
+  useEffect(() => {
+    const handleScrollEffect = () => {
+      const header = document.querySelector(".header");
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    };
+
+    window.addEventListener("scroll", handleScrollEffect);
+    return () => window.removeEventListener("scroll", handleScrollEffect);
+  }, []);
 
   return (
     <header className="header">
