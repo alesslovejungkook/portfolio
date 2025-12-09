@@ -2,9 +2,11 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  background: linear-gradient(180deg, #fff0f5, #fdeef3, #f8bbd0); 
+  background: transparent; /* ❌ Removed pink gradient */
   padding: 20px 10%;
   text-align: left;
+  border-top: 2px solid rgba(173, 20, 87, 0.1); /* soft accent line for structure */
+  backdrop-filter: blur(8px); /* optional — adds a soft glass effect */
 }
 
 .footer-section {
@@ -13,12 +15,18 @@
 }
 
 .footer-section h3 {
-  color: #b3005e; 
+  color: #b3005e;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .footer-section p {
   margin: 5px 0;
-  color: #333; 
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer-section p:hover {
+  color: #b3005e; /* subtle hover color for interactivity */
+  cursor: pointer;
 }

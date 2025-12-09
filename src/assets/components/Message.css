@@ -1,0 +1,99 @@
+/* Container */
+.message-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  background: linear-gradient(145deg, #ffe6f0, #ffd1dc); /* gradient pink */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.message-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Form Layout */
+.message-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Fields */
+.message-container input,
+.message-container textarea {
+  padding: 14px 18px;
+  font-size: 16px;
+  border: 2px solid #ff99c8; /* pink border */
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #fff0f6; /* very light pink */
+}
+
+.message-container input:hover,
+.message-container textarea:hover {
+  border-color: #ff80b3;
+}
+
+.message-container input:focus,
+.message-container textarea:focus {
+  border-color: #ff4d94;
+  box-shadow: 0 0 12px rgba(255, 77, 148, 0.4);
+  background: #fff5fb;
+}
+
+/* Button */
+.message-container button {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ad1457; /* vibrant pink */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 77, 148, 0.4);
+}
+
+.message-container button:hover {
+  background-color: #ad1457; /* darker pink */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px #ad1457(255, 77, 148, 0.5);
+}
+
+/* Status Message */
+.message-container p {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #ff4d94;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 0.6s forwards;
+}
+
+/* Fade-in animation for status */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 600px) {
+  .message-container {
+    padding: 30px 20px;
+    margin: 30px 20px;
+  }
+
+  .message-container input,
+  .message-container textarea,
+  .message-container button {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+}
